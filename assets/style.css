@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Righteous&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  width: 400px;
+  min-height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3)
+  inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: slateblue;
+}
+
+.container .count {
+  font-size: 55px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons .btn {
+  color: white;
+  background-color: slateblue;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.buttons .btn:active {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  box-shadow: none;
+}
+
+.buttons .reset {
+  background-color: #1a1015;
+  color: white;
+  padding: 3px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.buttons .reset:active {
+  transform: scale(0.95);
+}
